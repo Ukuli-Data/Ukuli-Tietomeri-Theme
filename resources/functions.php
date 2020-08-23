@@ -90,3 +90,7 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+    /* Require custom function files */
+
+    require get_template_directory() . 'ukuli-code/ukuli-functions.php';
