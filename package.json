@@ -1,15 +1,15 @@
 {
-  "name": "sage",
-  "version": "9.0.9",
-  "author": "Roots <team@roots.io>",
-  "homepage": "https://roots.io/sage/",
+  "name": "Ukuli Data Tietomeri Theme",
+  "version": "1.0.0",
+  "author": "Tomi Toivio <tomi.toivio@ukuli.fi>",
+  "homepage": "https://ukuli.fi",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/sage.git"
+    "url": "git@github.com:Ukuli-Data/Ukuli-Tietomeri-Theme.git"
   },
   "bugs": {
-    "url": "https://github.com/roots/sage/issues"
+    "url": "https://github.com/Ukuli-Data/Ukuli-Tietomeri-Theme/issues"
   },
   "licenses": [
     {

@@ -1,30 +1,20 @@
 {
-  "name": "roots/sage",
+  "name": "Ukuli Data Tietomeri Theme",
   "type": "wordpress-theme",
   "license": "MIT",
-  "description": "WordPress starter theme with a modern development workflow",
-  "homepage": "https://roots.io/sage/",
+  "description": "Theme for IoT website.",
+  "homepage": "https://ukuli.fi",
   "authors": [
     {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Tomi Toivio",
+      "email": "toimi.toivio@ukuli.fi",
+      "homepage": "https://github.com/TomiToivio"
     },
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "QWp6t",
-      "email": "hi@qwp6t.me",
-      "homepage": "https://github.com/qwp6t"
-    }
   ],
   "keywords": ["wordpress"],
   "support": {
-    "issues": "https://github.com/roots/sage/issues",
-    "forum": "https://discourse.roots.io/"
+    "issues": "https://github.com/Ukuli-Data/Ukuli-Tietomeri-Theme/issues",
+    "forum": "https://github.com/orgs/Ukuli-Data/teams/ukuli-data-tietomeri"
   },
   "autoload": {
     "psr-4": {
