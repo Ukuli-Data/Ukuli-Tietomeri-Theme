@@ -92,5 +92,8 @@ Container::getInstance()
     }, true);
 
     /* Require custom function files */
+    require dirname(__DIR__) . '/ukuli-code/ukuli-functions.php';
+    require dirname(__DIR__) . '/ukuli-code/ukuli-iot-class.php';
+    require dirname(__DIR__) . '/ukuli-code/ukuli-iota-class.php';
+    require dirname(__DIR__) . '/ukuli-code/ukuli-user-class.php';
 
-    require get_template_directory() . 'ukuli-code/ukuli-functions.php';
