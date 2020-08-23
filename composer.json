@@ -1,5 +1,5 @@
 {
-  "name": "Ukuli Data Tietomeri Theme",
+  "name": "ukulidata/tietomeri",
   "type": "wordpress-theme",
   "license": "MIT",
   "description": "Theme for IoT website.",
@@ -9,7 +9,7 @@
       "name": "Tomi Toivio",
       "email": "toimi.toivio@ukuli.fi",
       "homepage": "https://github.com/TomiToivio"
-    },
+    }
   ],
   "keywords": ["wordpress"],
   "support": {
