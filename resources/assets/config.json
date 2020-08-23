@@ -6,6 +6,11 @@
     ],
     "customizer": [
       "./scripts/customizer.js"
+    ],
+    "ukuli-scripts": [
+      "./scripts/ukuli-js/ukuli-chart.js",
+      "./scripts/ukuli-js/ukuli-query.js",
+      "./scripts/ukuli-js/ukuli-vue.js"
     ]
   },
   "publicPath": "/wp-content/themes/Ukuli-Tietomeri-Theme",
