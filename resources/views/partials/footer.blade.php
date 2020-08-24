@@ -9,4 +9,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/2ab0b091bd.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
-    
+
+<?php 
+$user_info = get_userdata(1);
+$user_name = $user_info->display_name;
+$user_email = $user_info->user_email;
+?>
+<script>
+  woopra.identify({
+    email: "<?php echo $user_email; ?>",
+    name: "<?php echo $user_name; ?>",
+    company: ""
+  });
+  woopra.track();
+</script>
