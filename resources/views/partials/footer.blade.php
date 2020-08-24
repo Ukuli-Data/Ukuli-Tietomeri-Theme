@@ -23,3 +23,7 @@ $user_email = $user_info->user_email;
   });
   woopra.track();
 </script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6497540.js"></script>
+<!-- End of HubSpot Embed Code -->
