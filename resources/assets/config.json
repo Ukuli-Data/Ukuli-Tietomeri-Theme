@@ -9,8 +9,8 @@
     ]
   },
   "publicPath": "/wp-content/themes/Ukuli-Tietomeri-Theme",
-  "devUrl": "http://localhost",
-  "proxyUrl": "http://localhost:3000",
+  "devUrl": "https://tietomeri.ukuli.fi",
+  "proxyUrl": "https://tietomeri.ukuli.fi:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "app/**/*.php",
