@@ -14,9 +14,9 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
     /* Ukuli Data scripts */
-    wp_enqueue_script('ukuli-chart.js', asset_path('/ukuli.js/main.js'), ['jquery'], null, true);
-    wp_enqueue_script('ukuli-jquery.js', asset_path('/ukuli.js/main.js'), ['jquery'], null, true);
-    wp_enqueue_script('ukuli-vue.js', asset_path('/ukuli.js/main.js'), ['jquery'], null, true);
+    wp_enqueue_script('ukuli-chart.js', asset_path('/ukuli.js/ukuli-chart.js'), ['jquery'], null, true);
+    wp_enqueue_script('ukuli-jquery.js', asset_path('/ukuli.js/ukuli-jquery.js'), ['jquery'], null, true);
+    wp_enqueue_script('ukuli-vue.js', asset_path('/ukuli.js/ukuli-vue.js'), ['jquery'], null, true);
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -48,7 +48,9 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'secondary_navigation' => __('Secondary Navigation', 'sage'),
+        'multi_navigation' => __('Multisite Navigation', 'sage'),
     ]);
 
     /**
@@ -90,6 +92,22 @@ add_action('widgets_init', function () {
         'name'          => __('Primary', 'sage'),
         'id'            => 'sidebar-primary'
     ] + $config);
+    $config = [
+        'before_widget' => '<div class="col-sm topwidget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>'
+    ];
+    register_sidebar([
+        'name'          => __('Top', 'sage'),
+        'id'            => 'sidebar-top'
+    ] + $config);
+    $config = [
+        'before_widget' => '<div class="col-sm footerwidget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>'
+    ];
     register_sidebar([
         'name'          => __('Footer', 'sage'),
         'id'            => 'sidebar-footer'

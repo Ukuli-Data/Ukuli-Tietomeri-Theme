@@ -6,6 +6,7 @@
     @include('partials.header')
     <div class="wrap container" role="document">
       <div class="content">
+        <div class="row">
         <main class="main">
           @yield('content')
         </main>
@@ -14,6 +15,7 @@
             @include('partials.sidebar')
           </aside>
         @endif
+        </div>
       </div>
     </div>
     @php do_action('get_footer') @endphp

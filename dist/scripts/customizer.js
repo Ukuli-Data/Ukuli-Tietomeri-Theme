@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "5882f8d435646c9e39a0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d8456a4926a82d70faba"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -716,7 +716,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://tietomeri.ukuli.fi:3000/wp-content/themes/Ukuli-Tietomeri-Theme/dist/";
+/******/ 	__webpack_require__.p = "http://localhost:3000/wp-content/themes/Ukuli-Tietomeri-Theme/dist/";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };

@@ -2,9 +2,22 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  primary: #525ddc
+  primary: #d3a79a
 );
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+/* Colors */
+$background-light: #e6ddd8;
+$background-medium: #d4b8ac;
+$background-dark: #d3a79a;
+
+$highlight-dark: #6b3239;
+$highlight-medium: #873742;
+$highlight-light: #c2727d;
+
+$foreground-dark: #230706;
+$foreground-medium: #3b1603;
+$foreground-light: #8d491c;
